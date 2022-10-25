@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spending Tracker</title>
+    <link rel="stylesheet" href="./budget.css" type="text/css">
+    <script src="https://kit.fontawesome.com/c888f3cc47.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="./index.html" id="logo"><i class="fa-solid fa-money-bill-transfer"></i></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#spendingEntries"><i class="fa-solid fa-pen"></i></a>
+                </li>
+                <li>
+                    <a href="#chartsAndGraphs"><i class="fa-solid fa-chart-pie"></i></a>
+                </li>
+                <li>
+                    <a href="#rankings"><i class="fa-solid fa-ranking-star"></i></a>
+                </li>
+                <li>
+                    <a href="#budgetCalculator" id="endNav"><i class="fa-solid fa-calculator"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>David's Spending Tracker</h1>
+        <section id="spendingEntries">
+            <h2>Spending Entries</h2>
+            <form
+                id="my-form"
+                method="post"
+                target="_blank"
+                action="https://script.google.com/macros/s/AKfycbxxSebAA1VQdK9cLUFH5HuyyACogzQBzHfrvuDgvEC34Nr4vTsW_sNs9duNniMHThHcGA/exec">
+                <label for="date"><i class="fa-regular fa-calendar-days"></i></label>
+                <input name="SpendDate" type="date" id="dateInput" required>
+                <br>
+                <label for="cost"><i class="fa-solid fa-dollar-sign"></i></label>
+                <input name="Cost" type="text" size="7" value="Cost" id="costInput" required>
+                <br>
+                <label for="store"><i class="fa-solid fa-shop"></i></label>
+                <input name="Store" type="text" size="12" value="Store" id="storeInput" required>
+                <br>
+                <label for="Category"><i class="fa-solid fa-folder-tree"></i></label>
+                <select name="Category" id="categorySelect" required>
+                    <option value="Category">Category</option>
+                    <option value="Car">Car</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Dining Out">Dining Out</option>
+                    <option value="Fuel">Fuel</option>
+                    <option value="Groceries">Groceries</option>
+                    <option value="Health & Beauty">Health & Beauty</option>
+                    <option value="Recreation">Recreation</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Take Aways">Take Aways</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Utilities">Utilities</option>
+                    <option value="other">Other</option>
+                </select>
+                <br>
+                <button type="submit" value="submit" id="recordSpend">Record Spend</button>
+            </form>
+        </section>
+        <section id="chartsAndGraphs">
+            <h2>Charts & Graphs</h2>
+            <iframe id="chart" width="603" height="375" seamless src="https://docs.google.com/spreadsheets/d/1d9l9YoiauqwFZL0ii0502o-fX7hDLGjCJJ1OLhIsJqc/htmlembed/sheet?gid=625405150&range=A1" frameborder="0" scrolling="no"></iframe>  
+        </section>
+        <section id="rankings">
+        </section>
+        <section id="budgetCalculator">
+            <h2>Budget Calculator</h2>
+        </section>
+    </main>
+    <footer>
+        <a target="_blank" href="https://www.facebook.com/DavidRogerJacob/"><i class="fa-brands fa-facebook"></i></a>
+        <a target="_blank" href="https://www.instagram.com/davidgayviid/"><i class="fa-brands fa-instagram"></i></a>
+        <a target="_blank" href="https://twitter.com/davidgayviid/"><i class="fa-brands fa-twitter"></i></a>
+        <a target="_blank" href="https://www.snapchat.com/add/davidrogerjake?sender_web_id=c966b3de-2b0c-4534-9056-50207a5cf48d&device_type=desktop&is_copy_url=true"><i class="fa-brands fa-snapchat"></i></a>
+        <a target="_blank" href="https://open.spotify.com/user/davidvivadams?si=3eb39da950b141e8"><i class="fa-brands fa-spotify"></i></a>
+        <a target="_blank" href="www.linkedin.com/in/davidrj-adams/"><i class="fa-brands fa-linkedin-in"></i></a>
+    </footer>
+    <script src="./budget.js"></script>
+</body>
+</html>

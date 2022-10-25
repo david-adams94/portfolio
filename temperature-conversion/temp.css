@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    font-family: 'Asap Condensed', sans-serif;
+    text-align: center;
+}
+
+html {
+    width: 80%;
+    margin: 10px auto;
+    line-height: 2rem;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+p {
+    font-style: italic;
+}
+
+button, input {
+    padding: 5px;
+    margin: 8px;
+    border: 1px solid black;
+    border-radius: 1px;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+}
+
+#currentSubmit:active, #convertSubmit:active {
+    color: grey;
+    background-color: black;
+}
+
+#tempLabel {
+    padding: 10px;
+}
+
+#lessCommonCurrent, #lessCommonConvert {
+    display: none;
+}

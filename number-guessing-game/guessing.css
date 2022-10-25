@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+
+html {
+    color: white;
+    background-color: black;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 10px;
+    line-height: 1.75rem;
+}
+
+label, input {
+    font-size: 1.75rem;
+    margin: 10px 10px;
+    padding: 5px;
+}
+
+input {
+    border-radius: 5px;
+    color: white;
+    border: 2px groove white;
+    background-color: black;
+}
+
+#submitBtn:hover, #guessField:focus {
+    color: black;
+    border: 2px groove grey;
+    background-color: whitesmoke;
+}
+
+#submitBtn:active {
+    color: whitesmoke;
+    background-color: grey;
+}
+
+#answer {
+    color: red;
+}
+
+#winningAnswer {
+    color: green;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

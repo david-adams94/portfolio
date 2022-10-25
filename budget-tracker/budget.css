@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;1,300&family=Manrope:wght@300;400&display=swap');
+
+* {
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+    color: whitesmoke;
+    font-family: Manrope, sans-serif;
+    font-weight: lighter;
+}
+
+html {
+    background-color: #222238;
+}
+
+header, footer {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: #17172e;
+    justify-content: space-between;
+}
+
+header {
+    top: 0;
+}
+
+#logo {
+    font-size: 5rem;
+    padding: 10px;
+    width: 100%;
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+header nav ul a {
+    font-size: 1.5rem;
+}
+
+main {
+    width: 75%;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+h1 {
+    font-family: Bitter, serif;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+h2 {
+    font-weight: bold;
+    margin: 25px auto;
+}
+
+input, select, button {
+    background-color: #0b0b23;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    text-align: center;
+    color-scheme: dark;
+    padding: 5px;
+}
+
+#dateInput, select, button {
+    cursor: pointer;
+}
+#recordSpend {
+    font-size: 1.25rem;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+input:hover, select:hover, button:hover, input:active, select:active, button:active {
+    color: 0b0b23;
+    background-color: #2e2e5a;
+    text-shadow: 2px 2px black;
+}
+
+iframe {
+    border-radius: 15px;
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+}

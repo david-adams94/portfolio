@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="./random.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Random Number Generator</h1>
+    </header>
+    <main>
+        <section>
+            <p id="guessPrompt">Enter what you think the number will be! (Positive numbers only)</p>
+            <input type="number" id="guessNum" required>
+            <input type="submit" id="guessSubmit" required>
+        </section>
+        <section>
+            <p>Once you've entered your guess, select the upper limit to generate the random number!</p>
+            <button id="tenBtn">10</button>
+            <button id="hundredBtn">100</button>
+            <button id="thousandBtn">1000</button>
+            <h2 id="randomNumber">...</h2>
+            <p id="guessOutcome">...</p>
+        </section>
+    </main>
+    <script src="./random.js"></script>
+</body>
+</html>

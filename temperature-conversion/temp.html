@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="./temp.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Temperature Convertor</h1>
+        <h2>By David Adams</h2>
+    </header>
+    <main>
+        <p>There are many different temperature scales, this tool will help covert between them!</p>
+        <section>
+            <label for="temp" id="tempLabel">Please enter the temperature:</label>
+            <input type="number" name="temp" id="tempNum">
+            <p id="selectCurrent">Please select the current temperature scale and press submit.</p>
+            <article>
+                <p>The three most commonly used scales are:</p>
+                <label>Fahrenheit</label>
+                <input type="radio" name="currentScale" id="currFah">
+                <label>Celsius</label>
+                <input type="radio" name="currentScale" id="currCel">
+                <label>Kelvin</label>
+                <input type="radio" name="currentScale" id="currKel">
+            </article>
+            <button id="seeMoreCurrent">See the Less Common Scales</button>
+            <article id="lessCommonCurrent">
+                <label>Rankine</label>
+                <input type="radio" name="currentScale" id="currRan">
+                <label>Newton</label>
+                <input type="radio" name="currentScale" id="currNew">
+                <label>Rømer</label>
+                <input type="radio" name="currentScale" id="currRom">
+                <label>Réaumur</label>
+                <input type="radio" name="currentScale" id="currRea">
+                <label>Delisle</label>
+                <input type="radio" name="currentScale" id="currDel">
+            </article>
+            <button type="submit" id="currentSubmit">Submit</button>
+            <p>Please select what you'd like to convert it to and press submit:</p>
+            <article>
+                <label>Fahrenheit</label>
+                <input type="radio" name="convertScale" id="conFah">
+                <label>Celsius</label>
+                <input type="radio" name="convertScale" id="conCel">
+                <label>Kelvin</label>
+                <input type="radio" name="convertScale" id="conKel">
+            </article>
+            <button id="seeMoreConvert">See the Less Common Scales</button>
+            <article id="lessCommonConvert">
+                <label>Rankine</label>
+                <input type="radio" name="convertScale" id="conRan">
+                <label>Newton</label>
+                <input type="radio" name="convertScale" id="conNew">
+                <label>Rømer</label>
+                <input type="radio" name="convertScale" id="conRom">
+                <label>Réaumur</label>
+                <input type="radio" name="convertScale" id="conRea">
+                <label>Delisle</label>
+                <input type="radio" name="convertScale" id="conDel">
+            </article>
+            <button type="submit" id="convertSubmit">Submit</button>
+            <article>
+                <p id="convertedTemp">Make your selections above for the conversion.</p>
+            </article>
+        </section>
+    </main>
+    <script src="./temp.js"></script>
+</body>
+</html>

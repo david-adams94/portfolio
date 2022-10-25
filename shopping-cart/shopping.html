@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./shopping.css" type="text/css">
+    <script src="https://kit.fontawesome.com/c888f3cc47.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNfNU9G2zMMdaj2L79-PhNOwFMO856ROx33KCgBFPg&s">
+</head>
+<body>
+    <nav>
+        <p>
+            <i class="fa-solid fa-3"></i>
+            <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+            <i class="fa-solid fa-bacon"></i>
+            <i class="fa-solid fa-paw"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </p>
+        <ul>
+            <li>
+                <a href="https://www.worldanimalprotection.us/blogs/heres-where-pigs-live-around-world" target="_blank">Home</a>
+            </li>
+            <li>
+                <a href="https://www.trademe.co.nz/a/marketplace/business-farming-industry/farming-forestry/livestock/pigs" target="_blank">Store</a>
+            </li>
+            <li>
+                <a href="https://www.thepigsite.com/articles/10-surprising-facts-about-pigs" target="_blank">About Us</a>
+            </li>
+            <li>
+                <a href="https://www.nationalgeographic.com/animals/article/pigs-dogs-pets-communication" target="_blank">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1 id="title">Three Little Pigs Store</h1>
+        <h2>By David Adams</h2>
+    </header>
+    <main>
+        <section id="products">
+            <article>
+                <figure>
+                    <img src="https://www.saferbrand.com/media/Articles/Safer-Brand/sb_us_bale_2_iStock_000078010145_Small.jpg"
+                    alt="bundle of straw">
+                    <figcaption>Straw<br><em>Not Advised in Windy Environments</em></figcaption>
+                </figure>
+                <select name="straw" id="strawSelect">
+                    <option value="small" id="smlStraw">Sml Bundle for $20</option>
+                    <option value="medium" id="medStraw">Med Bundle for $35</option>
+                    <option value="large" id="lrgStraw">Lrg Bundle for $80</option>
+                </select>
+                <button type="button" id="strawBtn">Add to Cart</button>
+            </article>
+            <article>
+                <figure>
+                    <img src="https://thumbs.dreamstime.com/b/pile-wood-kindling-big-firewood-deforestation-forest-clearing-backyard-184692945.jpg"
+                    alt="pile of wood">
+                    <figcaption>Wood<br><em>High Flammability</em></figcaption>
+                </figure>
+                <select name="wood" id="woodSelect">
+                    <option value="small" id="smlWood">Sml Pile for $50</option>
+                    <option value="medium" id="medWood">Med Pile for for $75</option>
+                    <option value="large" id="lrgWood">Lrg Pile for $175</option>
+                </select>
+                <button type="button" id="woodBtn">Add to Cart</button>
+            </article>
+            <article>
+                <figure>
+                    <img src="https://media.istockphoto.com/photos/stacks-of-bricks-picture-id516316668"
+                    alt="stack of bricks">
+                    <figcaption>Brick<br><em>Strong, Safe & The Best Choice!</em></figcaption>
+                </figure>
+                <select name="brick" id="brickSelect">
+                    <option value="small" id="smlBrick">Sml Stack for $100</option>
+                    <option value="medium" id="medBrick">Med Stack for for $175</option>
+                    <option value="large" id="lrgBrick">Lrg Stack for $500</option>
+                </select>
+                <button type="button" id="brickBtn">Add to Cart</button>
+            </article>
+        </section>
+        <aside id="cartPrompt">Select your building material above to add them to your pig trolley!</aside>
+        <section id="cart">
+            <h3>Your Shopping Cart</h3>
+            <p id="selectedCart"></p>
+            <p id="cartTotal">Total: $0.00</p>
+            <button type="button" id="payNowBtn">
+                <a href="#paymentMethod">Pay Now</a>
+            </button>
+            <aside id="paymentPrompt">Thank you for choosing Three Little Pigs Store today, select 'Pay Now' to complete your order!</aside>
+        </section>
+        <section id="payment">
+            <h3 id="paymentMethod">Payment Method</h3>
+            <article id="paymentTypes">
+                <label for="visaRadio">Visa</label>
+                <input type="radio" name="paymentType" id="visaRadio" class="paymentRadio">
+                <label for="mcRadio">MasterCard</label>
+                <input type="radio" name="paymentType" id="mcRadio" class="paymentRadio">
+                <label for="amexRadio">American Express</label>
+                <input type="radio" name="paymentType" id="amexRadio" class="paymentRadio">
+                <label for="payPalRadio">PayPal</label>
+                <input type="radio" name="paymentType" id="payPalRadio" class="paymentRadio">
+                <label for="directDebitRadio">Direct Debit</label>
+                <input type="radio" name="paymentType" id="directDebitRadio" class="paymentRadio">
+            </article>
+            <article id="cardDetails">
+                <form id="cardForm">
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" size="16" id="cardNumber" required>
+                    <select name="expiryMonth" id="expiryMonth">
+                        <option value="default">Exp Month</option>
+                        <option value="jan">Jan</option>
+                        <option value="feb">Feb</option>
+                        <option value="mar">Mar</option>
+                        <option value="apr">Apr</option>
+                        <option value="may">May</option>
+                        <option value="jun">Jun</option>
+                        <option value="jul">Jul</option>
+                        <option value="aug">Aug</option>
+                        <option value="sep">Sep</option>
+                        <option value="oct">Oct</option>
+                        <option value="nov">Nov</option>
+                        <option value="dec">Dec</option>
+                    </select>
+                    <select name="expiryYear" id="expiryYear">
+                        <option value="default">Exp Year</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                    </select>
+                    <label for="ccv">CCV:</label>
+                    <input type="text" size="4" id="ccv" required>
+                    <button type="submit" name="cardSubmit" id="cardSubmitBtn">Submit</button>
+                </form>
+            </article>
+            <article id="payPalDetails">
+                <button id="payPalBtn">
+                    <a href="https://www.paypal.com/zw/signin" target="_blank">
+                        <i class="fa-brands fa-paypal"></i> Click Here for PayPal Payments
+                    </a>
+                </button>
+            </article>
+            <article id="directDebitDetails">
+                <select name="bankName" id="bankName">
+                    <option value="thePiggyBank">The Piggy Bank</option>
+                    <option value="mrPigsPennies">Mr Pigs Pennies</option>
+                    <option value="mudPile">Mud Pile</option>
+                    <option value="sirOinksSavingsBank">Sir Oinks Saving Bank</option>
+                </select>
+                <button id="directDebitBtn">
+                    <a href="https://en.wikipedia.org/wiki/Direct_debit" target="_blank">
+                        <i class="fa-solid fa-building-columns"></i> Go to Online Banking
+                    </a>
+                </button>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <address>
+            <p><i class="fa-solid fa-shop"></i> 123 Oink St, Piggytown, USA 1234</p>
+        </address>
+    </footer>
+    <script src="./shopping.js"></script>
+</body>
+</html>

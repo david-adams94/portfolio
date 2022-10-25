@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 5rem;
+    text-shadow: 2px 2px grey;
+}
+
+p {
+    font-weight: lighter;
+    font-size: 2rem;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+#guessNum, #guessSubmit {
+    padding: 0.5rem;
+    color: black;
+    background-color:whitesmoke;
+    font-size: 1.5rem;
+    margin: 30px 15px;
+    border: 2px groove red;
+    border-radius: 530px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button {
+    padding: 1.5rem;
+    color: black;
+    background-color:whitesmoke;
+    font-size: 4rem;
+    margin: 30px 15px;
+    border: 2px groove red;
+    border-radius: 530px;
+}
+
+button:hover, #guessSubmit:hover {
+    color: whitesmoke;
+    background-color: black;
+}
+
+button:active, #guessSubmit:active, #guessNum:focus {
+    color: whitesmoke;
+    background-color: red;
+    border: 2px groove black;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 8rem;
+}
