@@ -151,6 +151,14 @@ h4 {
     padding: 10px 0;
 }
 
+#exitLinks {
+    font-size: 2rem;
+    font-weight: bold;
+    border: #000;
+    border-radius: 50%;
+    right: 25%;
+}
+
 #projectLinks {
     font-size: 1rem;
     display: none;
@@ -354,7 +362,7 @@ header nav ul li a:hover, header nav ul li a:active, #contact a:hover, #contact 
         width: 80%;
     }
     
-    #infoPromptCont, .carousel {
+    #infoPromptCont, #projectLinks, .carousel {
         display: none;
     }
 

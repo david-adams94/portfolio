@@ -33,3 +33,8 @@ document.getElementById('infoPrompt').onclick = function() {
     document.getElementById('projectLinks').style.display = "block";
     document.getElementById('infoPromptCont').style.display = "none";
 }
+
+document.getElementById('exitLinks').onclick = function() {
+    document.getElementById('projectLinks').style.display = "none";
+    document.getElementById('infoPromptCont').style.display = "block";
+}
