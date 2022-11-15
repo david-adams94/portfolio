@@ -362,7 +362,7 @@ header nav ul li a:hover, header nav ul li a:active, #contact a:hover, #contact 
         width: 80%;
     }
     
-    #infoPromptCont, #projectLinks, .carousel {
+    #infoPromptCont, #projectLinks, #exitLinks, .carousel {
         display: none;
     }
 
