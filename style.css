@@ -361,7 +361,7 @@ header nav ul li a:hover, header nav ul li a:active, #contact a:hover, #contact 
         width: 80%;
     }
     
-    #infoPromptCont, #projectLinks, #exitLinks, .carousel {
+    #infoPromptCont, #projectLinks, .carousel {
         display: none;
     }
 
@@ -376,11 +376,12 @@ header nav ul li a:hover, header nav ul li a:active, #contact a:hover, #contact 
         border-radius: 10px;
     }
 
-    #mobileGallery h3 {
+    #mobileGallery p {
         width: 85%;
+        font-size: 1.5rem;
     }
 
-    #mobileGallery h3, .mobilePic h3, .mobilePic p {
+    #mobileGallery p, .mobilePic h3, .mobilePic p {
         color: #000;
     }
 
